@@ -1,7 +1,7 @@
 import './Animal.css';
 
 export default function Animal({ animal }) {
-  let audio = new Audio(`/animalnoises/${animal.type}.mp3`);
+  let audio = new Audio(`/sound/${animal.type}.mp3`);
 
   const animalNoise = () => {
     audio.play();
