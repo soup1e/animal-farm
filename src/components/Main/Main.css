@@ -7,3 +7,8 @@ main {
   align-content: flex-start;
   position: relative;
 }
+
+.animal button {
+  background: transparent;
+  border: none !important;
+}
