@@ -1,12 +1,20 @@
 import './Animal.css';
 
 export default function Animal({ animal }) {
+  let audio = new Audio(`/animalnoises/${animal.type}.mp3`);
+
+  const animalNoise = () => {
+    audio.play();
+  };
+
   return (
     <>
       <div className="animal" style={{ top: animal.top, left: animal.left }}>
-        <img src={`/animals/${animal.type}.svg`} />
-        <p className="name"> {animal.name} </p>
-        {animal.says}
+        <button onClick={animalNoise}>
+          <img src={`/animals/${animal.type}.svg`} />
+          <p className="name"> {animal.name} </p>
+          {animal.says}
+        </button>
       </div>
     </>
   );
