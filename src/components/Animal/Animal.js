@@ -1,3 +1,4 @@
+
 import './Animal.css';
 
 export default function Animal({ animal }) {
@@ -18,4 +19,5 @@ export default function Animal({ animal }) {
       </div>
     </>
   );
+
 }
